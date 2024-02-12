@@ -1,0 +1,80 @@
+/* styles.css */
+
+.container { /* Changed from .container */
+    max-width: 90%; /* Adjust container width as needed */
+    height: fit-content;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 70px;
+    box-shadow: 10px 10px 10px darkcyan;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .input-label,
+  .input-field,
+  .submit-btn {
+    display: block;
+    /* margin-top: 10px; */
+    width: 100%;
+    height: 50px;
+  }
+  .input-label{
+    margin-top: 10px;
+  }
+  .submit-btn{
+    position: relative;
+    top: 40px;
+  }
+  .input-field{
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    color: blue;
+    font-size: larger;
+  }
+  
+  .left-column,
+  .right-column {
+    width: 45%; /* Adjust column width as needed */
+    margin-right: 5%; /* Adjust space between columns */
+  }
+  
+  .right-column {
+    margin-right: 0;
+    float: right;
+  }
+
+  .left-column{
+    float: left;
+  }
+  
+  .submit-btn {
+    clear: both;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+.error-message{
+    color: red;
+}
+
+.container{
+  span{
+    color: red;
+  }
+}

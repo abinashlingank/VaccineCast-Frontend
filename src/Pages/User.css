@@ -1,0 +1,125 @@
+.user-outer-box {
+    width: 95%;
+    height: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 140, 255, 0.212);
+    position: relative;
+    left: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+.top-box{
+    width: 95%;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    background-color: rgba(25, 54, 54, 0.212);
+}
+
+.content-box{
+    width: 95%;
+    height: 70%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(25, 54, 54, 0.212);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    overflow-y: auto;
+    position: relative;
+    top: 20px;
+}
+
+.title-box{
+    width: 95%;
+    font-size: 2rem;
+    padding: 20px;
+    margin: 1.5%;
+    border-radius: 20px;
+    background-color: rgba(78, 75, 75, 0.666);
+    color: aliceblue;
+    h3, button{
+      display: inline-block;
+    }
+    h3{
+      margin-right: 10%;
+    }
+}
+
+.centre-table {
+    width: 60%;
+    /* margin: 10px; */
+    
+    text-align: center;
+    /* column-gap: 5px; */
+  }
+  
+  /* .centre-table > thead > th {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(127, 255, 212, 0.552);
+    margin: 5px;
+  } */
+  .centre-table{
+    thead{
+      tr{
+        th{
+          padding: 10px;
+          border-radius: 10px;
+          background-color: rgba(127, 255, 212, 0.552);
+          margin: 5px;
+        }
+      }
+    }
+  }
+  
+  .centre-table th,
+  .centre-table td {
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px #777;
+  }
+
+  .table-button{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.3em 0.8em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: rgba(127, 255, 127, 0.5);
+    cursor: pointer;
+    transition: border-color 0.25s;
+    height: fit-content;
+}
+
+.table-button:hover{
+    background-color: rgba(127, 255, 127, 0.2);
+}
+  
+.add-btn{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.3em 0.8em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgba(127, 255, 127, 0.5);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  height: fit-content;
+  width: 20%;
+}
+
+.add-btn:hover{
+  background-color: rgba(127, 255, 127, 0.2);
+}

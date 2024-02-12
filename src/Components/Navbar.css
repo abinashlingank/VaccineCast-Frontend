@@ -1,0 +1,56 @@
+
+
+nav {
+    background-color: #113975; /* Background color */
+    color: white; /* Text color */
+    display: flex;
+    /* padding: 10px 20px;  */
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    box-shadow: 2px 5px 10px darkcyan;
+  }
+  img{
+    display: inline;
+    height: 50%;
+    margin-left: 5%;
+  }
+  h1 { 
+    color: aqua;
+    display: inline;
+  }
+  
+  ul {
+    display: inline;
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    float: right;
+    position: absolute;
+    right: 5%;
+  }
+  
+  ul li {
+    display: inline; /* Display items horizontally */
+    margin-right: 20px; /* Add space between items */
+  }
+  
+  ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+  }
+  
+  ul li{
+    color: aqua; /* Text color for links */
+    text-decoration: none; /* Remove underlines from links */
+  }
+
+  h1:hover{
+    color: antiquewhite;
+    cursor: pointer;
+  }
+  
+  ul li:hover {
+    text-decoration: underline; /* Underline on hover */
+    cursor: pointer; /* Show pointer cursor on hover */
+    color: antiquewhite;
+  }
+  
