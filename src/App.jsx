@@ -16,11 +16,17 @@ import Vaccinecentres from './Pages/Vaccinecentres';
 // axios.defaults.headers = {
 //   "Content-Type": "application/json",
 // };    
-axios.defaults.baseURL = "https://8f0d-182-19-35-177.ngrok-free.app";
+// axios.defaults.baseURL = "https://8f0d-182-19-35-177.ngrok-free.app";
+// axios.defaults.headers = {
+//   "Content-Type": "application/json",
+//   "ngrok-skip-browser-warning": "69420"
+// };
+
+axios.defaults.baseURL = "https://716c-35-154-189-81.ngrok-free.app";
 axios.defaults.headers = {
   "Content-Type": "application/json",
   "ngrok-skip-browser-warning": "69420"
-};      
+}; 
 
 
 function App() {
