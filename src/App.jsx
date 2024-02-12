@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from 'react'; // Import useEffect from React
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
 import axios from "axios";
-import Home from './Pages/Home'
-import { Routes, Route } from 'react-router'
-import User from './Pages/User'
-import SignUpForm from './Pages/Signup'
-import Adminvc from './Pages/Admin'
-import Adminmain from './Pages/Adminmain'
-import GoogleMap from './Components/Map'
+import Home from './Pages/Home';
+import { Routes, Route } from 'react-router';
+import User from './Pages/User';
+import SignUpForm from './Pages/Signup';
+import Adminvc from './Pages/Admin';
+import Adminmain from './Pages/Adminmain';
+import GoogleMap from './Components/Map';
 import Vaccinecentres from './Pages/Vaccinecentres';
 
 // axios.defaults.baseURL = "http://localhost:5000/";
@@ -24,20 +24,39 @@ axios.defaults.headers = {
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
 
-  return (
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/user' element={<User/>}/>
-      <Route path='/signup' element={<SignUpForm/>}/>
-      <Route path='/addvc' element={<Adminvc/>}/>
-      <Route path='/admin' element={<Adminmain/>}/>
-      <Route path='/test' element={<GoogleMap/>}/>
-      <Route path='/vaccinecentres' element={<Vaccinecentres/>}/>
+    window.addEventListener('resize', handleResize);
 
-    </Routes>
-  )
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  if(screenWidth >= 1000) {
+    return (
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/user' element={<User/>}/>
+        <Route path='/signup' element={<SignUpForm/>}/>
+        <Route path='/addvc' element={<Adminvc/>}/>
+        <Route path='/admin' element={<Adminmain/>}/>
+        <Route path='/test' element={<GoogleMap/>}/>
+        <Route path='/vaccinecentres' element={<Vaccinecentres/>}/>
+      </Routes>
+    );
+  } else {
+    return (
+      <>
+      <h1>This application is only available for desktop mode right now</h1>
+      <h3>Mobile Responsiveness is under progress</h3>
+      </>
+    );
+  }
 }
 
-export default App
+export default App;
