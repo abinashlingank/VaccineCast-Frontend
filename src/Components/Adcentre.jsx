@@ -54,7 +54,7 @@ function Adcentre({ isOpen, onClose, id }) {
                         <h4>Available Time</h4>
                         <p>{functionTime}</p>
                         <h4>Address</h4>
-                        <p>{address}</p>
+                        <p style={{fontSize:'larger'}}>{address}</p>
                         <h4>Longitude</h4>
                         <p>{longitude}</p>
                         <h4>Total Slots</h4>
