@@ -37,7 +37,7 @@ function App() {
     };
   }, []);
 
-  if(screenWidth >= 1000) {
+  if(screenWidth >= 950) {
     return (
       <Routes>
         <Route path='/' element={<Home/>}/>
