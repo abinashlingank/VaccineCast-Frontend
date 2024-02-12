@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
-import Navbar from './Navbar';
 
 const GoogleMap = ({ datal }) => {
+  // const API_KEY = AIzaSyCAkxHujOxLQNsI3kIilT2BMVnwGNiENl4;
   useEffect(() => {
     const loadMapScript = () => {
       // Check if Google Maps API is already loaded
       if (!window.google) {
         const script = document.createElement('script');
-        script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCAkxHujOxLQNsI3kIilT2BMVnwGNiENl4&callback=initMap`;
         script.async = true; // Set async loading
         script.defer = true; // Set defer loading (optional)
         script.onload = initMap; // Call initMap once the script is loaded
@@ -33,7 +33,7 @@ const GoogleMap = ({ datal }) => {
 
     // Create a new Google Map instance
     const map = new window.google.maps.Map(document.getElementById('map'), {
-      center: { lat: 12.971674017641948, lng:  80.04307229660826 }, // Default center
+      center: { lat: 12.971674017641948, lng: 80.04307229660826 }, // Default center
       zoom: 13, // Default zoom level
     });
 
