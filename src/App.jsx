@@ -22,7 +22,7 @@ import Vaccinecentres from './Pages/Vaccinecentres';
 //   "ngrok-skip-browser-warning": "69420"
 // };
 
-axios.defaults.baseURL = "https://716c-35-154-189-81.ngrok-free.app";
+axios.defaults.baseURL = "https://adf3-2409-40f4-39-4773-c731-b7b9-34b6-3382.ngrok-free.app";
 axios.defaults.headers = {
   "Content-Type": "application/json",
   "ngrok-skip-browser-warning": "69420"
